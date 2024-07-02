@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Modal from Class</h2>
+    <button id="openModal">Open Modal</button>
+    <button id="openModal2">Open Modal 2</button>
+
+    <button
+      type="button"
+      class="collapsible"
+      >Open Collapsible</button
+    >
+    <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <button
+      type="button"
+      class="collapsible"
+      >Open Collapsible</button
+    >
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+        magni.
+      </p>
+    </div>
+
+    <button
+      type="button"
+      class="collapsible"
+      >Open Collapsible</button
+    >
+    <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <hr />
+    <button
+      type="button"
+      class="collapsible2"
+      >Open Collapsible</button
+    >
+    <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <button
+      type="button"
+      class="collapsible2"
+      >Open Collapsible</button
+    >
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+        magni.
+      </p>
+    </div>
+
+    <button
+      type="button"
+      class="collapsible2"
+      >Open Collapsible</button
+    >
+    <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script>
+      const btn1 = document.getElementById('openModal');
+      btn1.addEventListener('click', ()=> {
+        new Modal('text for modal 1');
+      });
+
+      const btn2 = document.getElementById('openModal2');
+      btn2.addEventListener('click', ()=> {
+        new Modal('text for modal 2!!!!!!!!!!!');
+      });
+    </script>
+  </body>
+</html>
